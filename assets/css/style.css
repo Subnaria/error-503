@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #212529;
+  text-align: center;
+}
+
+.error-container {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #e63946;
+  margin: 0;
+}
+
+.error-message {
+  font-size: 1.8rem;
+  margin: 0.5rem 0 1.5rem;
+  color: #495057;
+}
+
+.error-desc {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Loader central */
+.loader {
+  border: 6px solid #e9ecef;
+  border-top: 6px solid #e63946;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 2rem auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+a {
+  color: #e63946;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f77f00;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #868e96;
+}
