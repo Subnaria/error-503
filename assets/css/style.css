@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,39 +8,43 @@ body {
   background: #f8f9fa;
   color: #212529;
   text-align: center;
+  padding: 1rem;
 }
 
 .error-container {
-  max-width: 600px;
+  max-width: 95%;
+  width: 650px;
   padding: 2rem;
 }
 
+/* Plus grand partout, mais reste fluide */
 .error-code {
-  font-size: 8rem;
+  font-size: clamp(5.5rem, 15vw, 10rem);
   font-weight: 700;
   color: #e63946;
   margin: 0;
 }
 
 .error-message {
-  font-size: 1.8rem;
-  margin: 0.5rem 0 1.5rem;
+  font-size: clamp(3rem, 6vw, 2.5rem);
+  margin: 1rem 0 2rem;
   color: #495057;
 }
 
 .error-desc {
   margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: clamp(2rem, 3.5vw, 1.4rem);
   color: #333;
+  line-height: 1.5;
 }
 
-/* Loader central */
+/* Loader central plus gros aussi */
 .loader {
-  border: 6px solid #e9ecef;
-  border-top: 6px solid #e63946;
+  border: 0.5em solid #e9ecef;
+  border-top: 0.5em solid #e63946;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: clamp(50px, 15vw, 80px);
+  height: clamp(50px, 15vw, 80px);
   margin: 2rem auto;
   animation: spin 1s linear infinite;
 }
@@ -53,6 +57,7 @@ body {
 a {
   color: #e63946;
   font-weight: 600;
+  font-size: clamp(2rem, 3.5vw, 1.2rem);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -64,6 +69,6 @@ a:hover {
 
 footer {
   margin-top: 2rem;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
   color: #868e96;
 }
